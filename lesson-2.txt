@@ -1,0 +1,13 @@
+Bài 1:
+- git init : Khởi tạo thư mục gồm các file mới và file có thay đổi (Các file ở trong thư mục này ở vùng Working Directory)
+- git add <file_name>: Đưa file cần thiết vào vùng Staging Area
+- git add . : đưa toàn bộ file trong thư mục ở vùng Working Directory sang vùng Staging Area (vùng chuẩn bị commit)
+- git commit -m “message” : đưa các file vùng Staging Area sang vùng Repository để quản lý phiên bản
+==========
+
+Bài 2: 
+Chạy lệnh: git init : file1, file2, file3 ở vùng Working Directory
+Chạy lệnh: git commit -m”init project” : file1, file2, file3 vẫn ở vùng Working Directory
+Chạy lệnh: git add file1: file1 ở vùng Staging Area, file2, file3 ở vùng Working Directory
+Chạy lệnh: git commit -m”add file1”	: file1 ở vùng Repository, file2, file3 ở vùng Working Directory
+Chạy lệnh: git add file : file1 ở vùng Repository, file2, file3 ở vùng Working Directory
