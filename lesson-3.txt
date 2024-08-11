@@ -1,5 +1,5 @@
 Bài 1: Giải thích các câu lệnh
-- git commit --amend : khi commit rồi mà muốn thay đổi messager của commit.
+- git commit --amend : khi commit rồi mà muốn thay đổi messager của commit sau cùng
 - git commit --amend -m”<message>” : Commit thay đổi với messager được nhập vào
 - git restore --staged <file> : đưa file từ vùng Staging Area (vùng chuẩn bị commit) về vùng Working Directory
 - git reset HEAD~1 : đưa file từ vùng Repository về vùng Working Directory
@@ -10,7 +10,8 @@ Bài 2:
 - Chạy lệnh: git commit -m”add file” : file1 ở vùng Repository, file2, file3 ở vùng Working Directory.
 - Chạy lệnh: git add . : file1 ở vùng Repository, file2, file3 ở vùng Staging Area.
 - Chạy lệnh: git restore --staged file2 : file2 ở vùng Working Directory, file1 ở vùng Repository, file3 ở vùng Staging Area.
-- Chạy lệnh: git reset HEAD~1 : file3 ở vùng Staging Area. File1, file2 ở vùng Working Directory.
+- Chạy lệnh: git commit -m”add all files” : file2 ở vùng Working Directory, file1,file3 ở vùng Repository
+- Chạy lệnh: git reset HEAD~1 : file2 , file3 ở vùng Working Directory,file1 ở vùng Repository
 Bài 3: 
 - Chạy lệnh git init : tạo ra 1 vùng chứa các file thay đổi hoặc thêm mới vùng Working Directory.
 - Tạo file file1.txt, file2.txt, oops/file3.txt : file1.txt, file2.txt, file3.txt, thư mục oops ở vùng Working Directory.
@@ -18,5 +19,5 @@ Bài 3:
 file1.txt
 oops/
 => file1.txt, file2.txt, file3.txt, thư mục oops ở vùng Working Directory.
-- Chạy lệnh: git add . : file1.txt, file3.txt, thư mục oops ở vùng Working Directory. file2.txt ở vùng Staging Area
-- Chạy lệnh: git commit -m"init project" : file1.txt, file3.txt, thư mục oops ở vùng Working Directory. File2.txt ở vùng Repository
+- Chạy lệnh: git add . : file1.txt, file3.txt, thư mục oops ở vùng local. file2.txt và file .gitignore ở vùng Staging Area
+- Chạy lệnh: git commit -m"init project" : file1.txt, file3.txt, thư mục oops ở local. File2.txt và file .gitignore ở vùng Repository
